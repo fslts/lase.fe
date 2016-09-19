@@ -4,7 +4,8 @@ angular.module('lase.common.serverapi', [])
 
   var service = {};
 
-  service.serverBaseUrl = 'http://lase.ynet.sk:5000/api';
+  // URL of a LASE instance
+  service.serverBaseUrl = 'http://localhost:5000/api';
 
   service.sendSearchRequest = function(data) {
       return $http.get(service.serverBaseUrl + '/search', {params: data});
