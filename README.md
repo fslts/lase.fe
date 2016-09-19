@@ -5,3 +5,4 @@
 ## installation
 
 `bower install`
+`npm install`
