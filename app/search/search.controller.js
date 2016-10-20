@@ -22,7 +22,7 @@ angular.module('lase.search', ['ngRoute'])
   vm.search = function() {
     $serverapi.sendSearchRequest(vm.form)
       .then(function(resp) {
-        if (resp.data.success) {
+        if (!resp.data.errors) {
           vm.results = resp.data.data;
         }
       });
