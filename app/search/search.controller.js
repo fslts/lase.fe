@@ -1,3 +1,5 @@
+(function() {
+
 'use strict';
 
 angular.module('lase.search', ['ngRoute'])
@@ -24,6 +26,8 @@ angular.module('lase.search', ['ngRoute'])
           vm.results = resp.data.data;
         }
       });
-  }
+  };
 
 }]);
+
+}());

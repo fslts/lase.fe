@@ -1,3 +1,5 @@
+(function() {
+
 'use strict';
 
 angular.module('lase.search.directives', [])
@@ -9,7 +11,7 @@ angular.module('lase.search.directives', [])
   directive.restrict = 'E';
   directive.scope = {
     item: '='
-  }
+  };
   directive.templateUrl = 'search/result-item.html';
 
   return directive;
@@ -34,8 +36,10 @@ angular.module('lase.search.directives', [])
       $scope.pos['padding-top'] = '10px';
       $scope.pos['background-color'] = 'rgba(54, 25, 25, .2)';
       return true;
-    }
-  }
+    };
+  };
 
   return directive;
 });
+
+}());
